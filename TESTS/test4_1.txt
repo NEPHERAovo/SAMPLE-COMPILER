@@ -1,0 +1,22 @@
+﻿//求给定数以内的素数，双重for循环测试
+
+func int main(){
+
+    int N = read() ;
+    int count,i,j,nprime=0;
+count = 0;
+    for(i=2;i<=N;i=i+1) {
+       nprime = 0;
+       for(j=2;j<i;j=j+1) {
+int temp;
+temp = i%j;
+	   if(temp == 0) {nprime = nprime + 1;}
+       }
+       if(nprime == 0) {
+            write(i);
+            count = count + 1;
+        }
+     }
+
+}
+

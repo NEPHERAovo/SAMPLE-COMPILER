@@ -1,0 +1,20 @@
+﻿//while嵌套if测试，求给定数以内所有偶数的和
+int a = 1 ;
+
+func int main(){
+
+    int sum,N ,i=1;
+sum = 0;
+    N = read();
+
+    while(i < N){
+int temp;
+temp = i%2;
+       if(temp == 0){
+           sum = sum +i;
+       }
+       i = i + 1;
+    }
+    write(sum);
+}
+

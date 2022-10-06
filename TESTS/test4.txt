@@ -1,0 +1,17 @@
+//for嵌套if,求1到给定数N以内所有奇数的和
+func int main()
+
+{
+  int i,N,sum = 0;
+  N = read();
+  for(i=1;i<=N;i=i+1)
+{
+ int temp;
+temp = i%2;
+     if(temp== 1){
+	sum = sum+i;}
+    }
+
+  write(sum);
+
+}
